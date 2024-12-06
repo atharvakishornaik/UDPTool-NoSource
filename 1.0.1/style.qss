@@ -1,0 +1,162 @@
+/* General styles */
+QWidget {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #FAFAFA; /* Light background for the overall UI */
+    color: #333333; /* Dark text for readability */
+}
+
+/* Style for input fields (depth effect) */
+QLineEdit, QComboBox, QSpinBox {
+    border: 2px solid #555;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    color: #333; /* Dark text for input fields */
+}
+
+/* Input fields focus state */
+QLineEdit:focus, QComboBox:focus, QSpinBox:focus {
+    border-color: #4d90fe;
+    background-color: #e5f1ff; /* Slight light blue on focus for clarity */
+}
+
+/* Style for QPushButton - Send Button */
+QPushButton#sendButton {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Hover state for Send Button */
+QPushButton#sendButton:hover {
+    background-color: #66BB6A; /* Lighter green for hover effect */
+}
+
+/* Style for QPushButton - Broadcast Button */
+QPushButton#broadcastButton {
+    background-color: #2196F3; /* Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Hover state for Broadcast Button */
+QPushButton#broadcastButton:hover {
+    background-color: #64B5F6; /* Lighter blue for hover effect */
+}
+
+/* Style for QTextEdit (log display) */
+QTextEdit {
+    border: 2px solid #555;
+    border-radius: 5px;
+    background-color: #ffffff; /* White background for logs */
+    padding: 15px; /* Increased padding for better readability */
+    color: #333; /* Dark text for readability */
+    font-family: Consolas, monaco, monospace;
+    font-size: 13px;
+    line-height: 1.5; /* Improved line spacing */
+}
+
+/* Placeholder text color */
+QLineEdit::placeholder {
+    color: #888; /* Lighter gray for placeholder text */
+}
+
+/* Style for labels and general text */
+QLabel {
+    font-size: 14px;
+    color: #333333; /* Dark text for clarity */
+}
+
+/* Style for spinbox */
+QSpinBox {
+    background-color: #f0f0f0;
+    border: 2px solid #555;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Focus style for spinboxes and line edits */
+QSpinBox:focus, QLineEdit:focus {
+    border-color: #4d90fe;
+    background-color: #e5f1ff; /* Light blue background on focus */
+}
+
+/* Style for the main container */
+QGridLayout, QVBoxLayout {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Container elements (spacings, padding) */
+QWidget#container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Style for ComboBox */
+QComboBox {
+    border: 2px solid #555;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Styles for the window */
+QWidget {
+    background-color: #f8f8f8; /* Light background for the overall UI */
+}
+
+/* General button style (used for other buttons if needed) */
+QPushButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Scrollbar style for log area */
+QScrollBar:vertical {
+    border: none;
+    background: #f0f0f0;
+    width: 12px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background: #888;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #555;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: #f0f0f0;
+    height: 12px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #888;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #555;
+}
